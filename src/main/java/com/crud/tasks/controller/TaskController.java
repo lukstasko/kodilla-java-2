@@ -12,6 +12,7 @@ import java.util.List;
 
 import static org.springframework.http.MediaType.*;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/v1/tasks")
 @RequiredArgsConstructor
