@@ -25,7 +25,7 @@ public class EmailScheduler {
             Mail.builder()
                 .mailTo(adminConfig.getAdminMail())
                 .subject(SUBJECT)
-                .message("Currently in database you got: "+size+" task"+ ((size==3)?"":"s"))
+                .message("Currently in database you got: "+size+" task"+ ((size==1)?"":"s"))
                 .build()
         );
     }
