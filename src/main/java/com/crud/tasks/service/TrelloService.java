@@ -21,6 +21,7 @@ public class TrelloService {
     private final SimpleEmailService emailService;
     private final AdminConfig adminConfig;
 
+
     public List<TrelloBoardDto> fetchTrelloBoards(){
         return trelloClient.getTrelloBoards();
     }

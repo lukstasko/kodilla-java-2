@@ -1,0 +1,149 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > TrelloConfig</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.crud.tasks.trello.config</a>
+</div>
+
+<h1>Coverage Summary for Class: TrelloConfig (com.crud.tasks.trello.config)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">TrelloConfig</td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (1/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (1/5)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">TrelloConfig$MockitoMock$TAD5M391</td>
+  </tr>
+  <tr>
+    <td class="name">TrelloConfig$MockitoMock$TAD5M391$auxiliary$1W8la0ft</td>
+  </tr>
+  <tr>
+    <td class="name">TrelloConfig$MockitoMock$TAD5M391$auxiliary$5OB4R5ii</td>
+  </tr>
+  <tr>
+    <td class="name">TrelloConfig$MockitoMock$TAD5M391$auxiliary$9a1YL8R6</td>
+  </tr>
+  <tr>
+    <td class="name">TrelloConfig$MockitoMock$TAD5M391$auxiliary$rPyz5e5M</td>
+  </tr>
+  <tr>
+    <td class="name">TrelloConfig$MockitoMock$TAD5M391$auxiliary$toAOSnFU</td>
+  </tr>
+  <tr>
+    <td class="name">TrelloConfig$MockitoMock$TAD5M391$auxiliary$Z6BQIt0l</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (1/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (1/5)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.crud.tasks.trello.config;
+&nbsp;
+&nbsp;import lombok.Getter;
+&nbsp;import org.springframework.beans.factory.annotation.Value;
+&nbsp;import org.springframework.stereotype.Component;
+&nbsp;
+&nbsp;@Component
+&nbsp;@Getter
+<b class="fc">&nbsp;public class TrelloConfig {</b>
+&nbsp;    @Value(&quot;${trello.api.endpoint.prod}&quot;)
+<b class="nc">&nbsp;    private String trelloApiEndpoint;</b>
+&nbsp;    @Value(&quot;${trello.app.key}&quot;)
+<b class="nc">&nbsp;    private String trelloAppKey;</b>
+&nbsp;    @Value(&quot;${trello.app.token}&quot;)
+<b class="nc">&nbsp;    private String trelloToken;</b>
+&nbsp;    @Value(&quot;${trello.app.username}&quot;)
+<b class="nc">&nbsp;    private String trelloUsername;</b>
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-04-11 22:28</div>
+</div>
+</body>
+</html>

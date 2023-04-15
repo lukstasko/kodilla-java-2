@@ -20,8 +20,7 @@ public class TaskController {
     private final DBService service;
     private final TaskMapper taskMapper;
 
-
-    @GetMapping
+   @GetMapping
     public ResponseEntity< List<TaskDto>> getTasks(){
         List<Task> tasks= service.getAllTasks();
         return ResponseEntity.ok( taskMapper.maptoTaskDtoList(tasks));
