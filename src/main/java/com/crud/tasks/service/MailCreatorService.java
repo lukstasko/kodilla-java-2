@@ -4,6 +4,7 @@ import com.crud.tasks.config.AdminConfig;
 import com.crud.tasks.domain.Mail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.mail.javamail.MimeMessagePreparator;
@@ -21,6 +22,9 @@ public class MailCreatorService {
     @Qualifier("templateEngine")
     private TemplateEngine templateEngine;
 
+    @Value("${info.company.name}")
+    private String companyDetails;
+
 
 
     public String buildTrelloCardEmail(String message) {
@@ -29,6 +33,9 @@ public class MailCreatorService {
         context.setVariable("tasks_url","https://lukstasko.github.io/");
         context.setVariable("button", "Visit website");
         context.setVariable("admin_name", adminConfig.getAdminName());
+        context.setVariable("goodbye_message", "Have a nice day!");
+        context.setVariable("company_details", companyDetails);
+
         return templateEngine.process("mail/created-trello-card-mail", context);
 
     }
